@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(./photo-1577017040065-650ee4d43339.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 99.9%;
+    background-attachment: fixed;
+
+  
+    
+
+
+}
+
+.clock{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid;
+    background-color: rgb(129, 124, 55);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background-image: repeating-linear-gradient(rgb(31, 7, 248), rgb(180, 156, 47) 10%, rgb(12, 175, 12) 20%); */
+    /* background-image: conic-gradient(rgb(253, 5, 5), rgb(252, 227, 2), rgb(27, 99, 5), rgb(29, 26, 182), rgb(36, 29, 29)); */
+    /* background-image: repeating-conic-gradient(rgb(231, 25, 25) 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg); */
+    background-image: radial-gradient(circle, red, yellow, green);
+    /* background-image: repeating-radial-gradient(red, yellow 10%, green 15%); */
+    /* background-image: radial-gradient(red 5%, yellow 15%, green 60%); */
+
+
+}
+
+.clock:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(22, 24, 22);
+    border-radius: 50%;
+    
+
+}
+  /* 1rem em = 16px */
+.num{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 18px;
+    color: rgb(35, 44, 44);
+
+}
+
+.num:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 15px;
+    background-color: rgb(252, 244, 244);
+
+
+}
+
+.num1{
+    transform: rotate(30deg);
+}
+
+.num1 div{
+    transform: rotate(-30deg);
+}
+
+.num2{
+    transform: rotate(60deg);
+}
+
+.num2 div{
+    transform: rotate(-60deg);
+}
+
+.num3{
+    transform: rotate(90deg);
+}
+
+.num3 div{
+    transform: rotate(-90deg);
+}
+
+.num4{
+    transform: rotate(120deg);
+}
+
+.num4 div{
+    transform: rotate(-120deg);
+}
+
+.num5{
+    transform: rotate(150deg);
+}
+
+.num5 div{
+    transform: rotate(-150deg);
+}
+
+.num6{
+    transform: rotate(180deg);
+}
+
+.num6 div{
+    transform: rotate(-180deg);
+}
+
+.num7{
+    transform: rotate(210deg);
+}
+
+.num7 div{
+    transform: rotate(-210deg);
+}
+
+.num8{
+    transform: rotate(240deg);
+}
+
+.num8 div{
+    transform: rotate(-240deg);
+}
+
+.num9{
+    transform: rotate(270deg);
+}
+
+.num9 div{
+    transform: rotate(-270deg);
+}
+
+.num10{
+    transform: rotate(300deg);
+}
+
+.num10 div{
+    transform: rotate(-300deg);
+}
+
+.num11{
+    transform: rotate(330deg);
+}
+
+.num11 div{
+    transform: rotate(-330deg);
+}
+
+.hand{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hand div{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(5, 5, 5);
+}
+
+.sec {
+    width: 3px;
+    height: 43%;
+}
+
+.min{
+    height: 40%;
+    width: 5px;
+    border-radius: 2px;
+}
+
+.hour{
+    height: 38%;
+    width: 8px;
+    border-radius: 5px;
+}
+
+
+
